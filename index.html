@@ -30,7 +30,7 @@
         }
 
         /* Style the form sections */
-        .w3-section {
+        .PAN-section {
             margin-bottom: 15px;
         }
 
@@ -42,8 +42,8 @@
         }
 
         /* Style the input fields and textarea */
-        .w3-input,
-        .w3-border {
+        .PAN-input,
+        .PAN-border {
             width: 100%;
             padding: 8px;
             box-sizing: border-box;
@@ -53,13 +53,13 @@
         }
 
         /* Disable the URL input field */
-        #w3_url {
-            cursor: not-allowed;
+        #PAN_url {
+            /* cursor: not-allowed; */
             background-color: #eee;
         }
 
         /* Style the button */
-        .w3-button {
+        .PAN-button {
             background-color: #333;
             color: #fff;
             padding: 10px 15px;
@@ -69,31 +69,31 @@
         }
 
         /* Style the button on hover */
-        .w3-button:hover {
+        .PAN-button:hover {
             background-color: #555;
         }
     </style>
 </head>
 
 <body>
-    <h2>Your Suggestion:</h2>
+    <h2>Your Suggestion for me </h2>
     <form>
-        <div class="w3-section">
+        <div class="PAN-section">
             <label for="err_email">Your E-mail:</label>
-            <input class="w3-input w3-border" type="text" style="margin-top:5px;width:100%" id="err_email"
+            <input class="PAN-input PAN-border" type="text" style="margin-top:5px;width:100%" id="err_email"
                 name="err_email">
         </div>
-        <div class="w3-section">
+        <div class="PAN-section">
             <label for="err_email">Page address:</label>
-            <input class="w3-input w3-border" type="text" style="width:100%;margin-top:5px" id="err_url" name="err_url" disabled="disabled">
+            <input class="PAN-input PAN-border" type="text" style="width:100%;margin-top:5px" id="err_url" name="err_url" >
         </div>
-        <div class="w3-section">
+        <div class="PAN-section">
             <label for="err_email">Description:</label>
-            <textarea rows="10" class="w3-input w3-border" id="err_desc" name="err_desc"
+            <textarea rows="10" class="PAN-input PAN-border" id="err_desc" name="err_desc"
                 style="width:100%;margin-top:5px;resize:vertical;"></textarea>
         </div>
         <div class="form-group">
-            <button type="button" class="w3-button w3-dark-grey" onclick="sendErr()">Submit</button>
+            <button type="button" class="PAN-button PAN-dark-grey" onclick="sendErr()">Submit</button>
         </div>
         <br>
     </form>
